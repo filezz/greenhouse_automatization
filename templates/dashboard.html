@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple Dashboard</title>
+    <meta http-equiv="refresh" content="5">
+    <link rel="stylesheet" href="/static/dashboard.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav_bar_cont">
+            <div class="logo">
+                <a href="/templates/index.html">Greenhouse</a>
+            </div>
+           
+        </div>
+    </nav>
+
+    <div class="main_cont">
+        <div class="dashboard">
+            <div class="card">
+                <h2>Temperature</h2>
+                <p>{{ avg_temp }}</p>
+            </div>
+            <div class="card">
+                <h2>Humidity (%)</h2>
+                <p> {{ avg_humid}}</p>
+            </div>
+            <div class="card">
+                <h2> Light level (lux)</h2>
+                <p>{{ avg_lightlvl  }}</p>
+            </div>
+            <div class="card">
+                <h2>Sensors Id</h2>
+                <p>{{ sensorsID }}</p>
+            </div>
+            <div class ="card longtxt" > 
+                <h2>Timestamp</h2>
+                <p>{{ dateTime }}</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_text">
+            &copy; 2024 Your Company. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
